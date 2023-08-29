@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let text = "hELlo";
+
+        let upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let lower = "abcdefghijklmnopqrstuvwxyz";
+        let result = [];
+        for (let i = 0; i < text.length; i++) {
+            if (upper.indexOf(text[i]) != -1) {
+                result.push(text[i].toLowerCase());
+                
+            } else if (lower.indexOf(text[i]) !=-1) {
+                result.push(text[i].toUpperCase());
+            } else {
+                result.push(text[i]);
+            }
+        }
+        console.log(result.join("")); 
+        /* ABC...Zabc...z */
+       /*  let str = "ChAo xÌn";
+        let text="";
+        for (let i=0; i<str.length; i++) {
+            if (str[i]<"a") {
+                // đang là chữ hoa thì phải cho xuống chữ thường;
+                text+=str[i].toLowerCase();
+            } else {
+                // đang là chữ thường phải cho lên chữ hoa;
+                text +=str[i].toUpperCase();
+            }
+        } */
+        console.log(text);
+    </script>
+</body>
+
+</html>

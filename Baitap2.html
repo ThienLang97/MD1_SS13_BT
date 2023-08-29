@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Bài tập từ điển.
+        b1: Tạo mảng tiếng anh
+        b2: Tạo mảng tiếng việt2
+        b3: 
+     -->
+     <script>
+        let vietnamese =["xanh","đỏ","tím","vàng"];
+        let english = ["blue","red","violet","yellow"];
+        let text = prompt("Mời nhấp tiếng anh");
+        let index=vietnamese.indexOf(text);
+        if (index!=-1) {
+            console.log(`Từ ${text} dịch là ${english[index]}`);
+        } else {
+            console.log("Từ ko tìm thấy");
+        }
+     </script>
+</body>
+</html>
